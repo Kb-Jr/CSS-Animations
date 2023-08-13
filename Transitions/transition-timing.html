@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Timing</title>
+    <style>
+        body{
+            margin: 100px;
+            color: white;
+        }
+
+        .wrapper{
+            display: block;
+            margin-bottom: 75px;
+        }
+
+        .sphere{
+            border-radius: 50%;
+            height: 25px;
+            width: 25px;
+            margin: 10px;
+            background-color: #3cf;
+            transition: margin 2s;
+        }
+
+        .wrapper:hover .sphere{
+            margin-left: 400px;
+        }
+
+        .s1{
+            transition-timing-function: linear;
+            background-color: #3cf;
+        }
+
+        .s2{
+            transition-timing-function: ease;
+            background-color: #47dc80;
+        }
+        .s3{
+            transition-timing-function: ease-in;
+            background-color: #ebff33;
+        }
+        .s4{
+            transition-timing-function: ease-out;
+            background-color: #d34c43;
+        }
+        .s5{
+            transition-timing-function: ease-in-out;
+            background-color: #97066c;
+        }
+
+        .s6{
+            transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            background-color: #260544;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sphere s1"></div>
+        <div class="sphere s2"></div>
+        <div class="sphere s3"></div>
+        <div class="sphere s4"></div>
+        <div class="sphere s5"></div>
+    </div>
+</body>
+</html>

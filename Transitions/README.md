@@ -26,3 +26,8 @@
 - This property allows you to specify when the transform will commence.
 - By default, the transition starts as soon as it is triggered. in some cases you might not necessarily want that.
 - It is possible to use negative values for transition delays.
+
+
+# Transition shorthand
+- Instead of writing all transition properties uniquely, you can consolidate all 4 properties in one line of code like so:
+- - transition: [property] [duration] [timing-function] [delay]

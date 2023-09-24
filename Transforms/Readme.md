@@ -25,4 +25,22 @@
 - "skewX" tilts the element in the left or right direction. A positive value in degrees tilts the element to the left and a negative x value tilts the element to the right.
 - "skewY" tilts the element in the up or down direction. A positive value in degrees tilts the element down and a negative value tilts the element upwards.
 - You can use shorthand of "skew" and include the x and y values as arguments like so: skew(xdeg, ydeg);
-- Skewing an element also skews the child elements. To ensure the child element doesn't skew, specify the opposite of the direction the parent is being skewed to on the child element
+- Skewing an element also skews the child elements. To ensure the child element doesn't skew, specify the opposite of the direction the parent is being skewed to on the child element.
+
+## Transform Origin
+- Transform Origin specifies the location origin of the Transform
+- By default the origin/centrepoint of every element is in the middle. 
+- You can use key word values to specify the origin. Keywords such as Bottom, centre, right, top, left.
+- Key words can be combined simply by typing both keywords separated by a space.
+- You can also specify the origin by using percentages. Where absolute right and bottom positions are represented by 0% respectively and absolute left and top positions are represented by 100% respectively. 
+- A combination of origins in percentages are represented below 
+[right bottom - 0% 0%
+ right top - 0% 100%
+ left bottom - 100% 0%
+ left top - 100% 100%
+ centre - 50% 50%]
+- Adjusting the values above can aid in specifying more accurately where you want your trasform origin to be.
+
+## Multiple Transforms
+- You can transform multiple properties of an element by either listing them all out individually or by using shorthand notation and seperating each property by a space
+- The last property specified is usually the first property executed when the trigger event fires.

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform origin</title>
+</head>
+
+<style>
+    .shape{
+        height: 100px;
+        width: 100px;
+        border-radius: 5px 50%;
+        background-color:#f4623a;
+        transition: transform 2s;
+        margin: 100px auto;
+
+    }
+
+    .shape:hover{
+        transform: rotate(720deg);
+    }
+
+    .s2{
+        transform-origin: center bottom;
+        background-color: rgb(221, 207, 15);
+    }
+</style>
+<body>
+    <div class="shape">
+
+    </div>
+
+    <div class="shape s2">
+
+    </div>
+</body>
+</html>

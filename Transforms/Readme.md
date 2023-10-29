@@ -50,3 +50,9 @@
 - It does so using a co-ordinate system.
 - The default method of writing CSS matrix is; Transform: matrix (1,0,0,1,0,0), each figure here represents (scaleX, skewY, skewX, scaleY, translateX, translateY)
 - Changing the value of any one of these parameters directly applies the animation to the selected element. No measurement unit is required.
+
+## Offload Hover
+- The offload hover is used to combat unwanted reactions witnessed on the element being animated.
+- it takes care of any sort of jittering or stuttering that occurs when the element is triggered or due to mouse movements.
+- It does this by moving the trigger for the animation to another element which ususally encapsulates the element we want to animate.
+- Setting the "pointer-events" property to none on the element being animated ensures that the element becomes just a visual element i.e it can be seen but not interacted with.

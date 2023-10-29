@@ -44,3 +44,9 @@
 ## Multiple Transforms
 - You can transform multiple properties of an element by either listing them all out individually or by using shorthand notation and seperating each property by a space
 - The last property specified is usually the first property executed when the trigger event fires.
+
+## Matrix
+- The CSS matrix allows for the transformation of the Scale, Skew and Translate property in one single line.
+- It does so using a co-ordinate system.
+- The default method of writing CSS matrix is; Transform: matrix (1,0,0,1,0,0), each figure here represents (scaleX, skewY, skewX, scaleY, translateX, translateY)
+- Changing the value of any one of these parameters directly applies the animation to the selected element. No measurement unit is required.

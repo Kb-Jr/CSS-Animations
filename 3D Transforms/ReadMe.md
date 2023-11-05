@@ -15,3 +15,9 @@
 - It always need to be on the parent element
 - It specifies where a 3d element originates from on the x and y axes
 - It takes key words, percentages, pixels or absolute digits as values
+
+
+## Scale Z
+- This allows you to scale an element in the third dimension along the z axis
+- Scale Z property needs to be incorporated with other transform properties in order to visually experience a change in the appearance of the element.
+- The order when applying shorthand matters. Scale needs to come before the rotate or other transform properties

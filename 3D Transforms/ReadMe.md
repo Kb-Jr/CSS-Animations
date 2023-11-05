@@ -6,3 +6,12 @@
 - Negative values on the X axis, move the element to the left, while positive values move it to the right. Negative values on the Y axis moves the element upwards while positive values moves it downwards. A negative value on the Z axis moves the element away from you while a positive value on the Z axis moves the element towards you.
 - We use the same Transform functions as in 2D animations, but and extra Z or 3D dimension is added. Example: TranslateZ/3d, ScaleZ/3d, RotateZ as well as Perspective and Matrix 3d.
 - The Matrix 3D takes 16 values 
+
+## Transform Rotate and Perspective
+
+## Perspective origin
+- This property determines the origin for the perspective
+- Can be thought of as the vanishing point of the current 3d space
+- It always need to be on the parent element
+- It specifies where a 3d element originates from on the x and y axes
+- It takes key words, percentages, pixels or absolute digits as values

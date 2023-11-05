@@ -21,3 +21,7 @@
 - This allows you to scale an element in the third dimension along the z axis
 - Scale Z property needs to be incorporated with other transform properties in order to visually experience a change in the appearance of the element.
 - The order when applying shorthand matters. Scale needs to come before the rotate or other transform properties
+
+## Translate Z
+- Used to move an element along the Z axis in 3D space.
+- Without perspective TranslateZ does not work as expected

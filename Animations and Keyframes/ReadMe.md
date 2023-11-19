@@ -26,3 +26,6 @@
 - Alternate plays the odd count of the iteration in the normal direction and the even count in the reverse direction. Reverse alternate does the opposite.
 - When animations are played in reverse, the timing function will also be in reverse. So ease in will be an ease-out on reverse.
 
+## Animation fill Mode
+- Defines what values are applied to an animation outside of the time it is executing.
+- Using an animation fill mode of forwards ensures that the final state of the animation execution remains even after the animation cycle. Using Backwards reverses it to its initial state.

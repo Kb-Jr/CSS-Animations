@@ -17,4 +17,12 @@
 ## Animation Delay
 - It defines when the animation will start. It allows the animation to begin execution some time after it is applied or triggered.
 - Specifying animation duration is important
-- The delay can take a negative value which will mean the animation executes instantaneously. It appears to start part-way through its play cycle
+- The delay can take a negative value which will mean the animation executes instantaneously. It appears to start part-way through its play cycle.
+
+## Animation Iteration Count and direction
+- Iteration count Specifies the number of times the animation plays before it stops.
+- Animation direction specifies if the animation should play in reverse on some or all cycles or iterations.
+- The animation direction takes the following rules; Normal, reverse, alternate, alternate-reverse.
+- Alternate plays the odd count of the iteration in the normal direction and the even count in the reverse direction. Reverse alternate does the opposite.
+- When animations are played in reverse, the timing function will also be in reverse. So ease in will be an ease-out on reverse.
+

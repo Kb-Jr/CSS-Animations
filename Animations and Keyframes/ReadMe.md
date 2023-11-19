@@ -13,3 +13,8 @@
 ## Animation Timing function
 - Previously we've touched on using timing functions like ease, ease in out etc, another timing function that can be used is the steps function.
 - The steps function can be applied when trying to achieve a more realistic movement as opposed to the smooth movements attained when using ease. For example the movement of the hands of a clock. 
+
+## Animation Delay
+- It defines when the animation will start. It allows the animation to begin execution some time after it is applied or triggered.
+- Specifying animation duration is important
+- The delay can take a negative value which will mean the animation executes instantaneously. It appears to start part-way through its play cycle

@@ -29,3 +29,7 @@
 ## Animation fill Mode
 - Defines what values are applied to an animation outside of the time it is executing.
 - Using an animation fill mode of forwards ensures that the final state of the animation execution remains even after the animation cycle. Using Backwards reverses it to its initial state.
+
+## Animation Play State
+- This specifies whether the animation is running or paused. 
+- When it is paused, the progress the animation had reached continues to be applied. 

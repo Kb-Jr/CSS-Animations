@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiple Animations</title>
+    <style>
+        body{
+            padding: 50px;
+        }
+        .circle-cont{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 10px;
+        }
+
+        .circle{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: aquamarine;
+        }
+
+        .ground{
+            position: relative;
+            top: 300px;
+            width:80%;
+            margin:auto;
+            height: 1px;
+            background-color: gray;
+        }
+
+        .c1{
+            animation: grow 3s ease-in, colorize 3s 4s;
+            
+        }
+
+        .c2{
+            animation: drop 3s ease-in;
+        }
+
+        .c3{
+            animation: colorize 3s ease-in, drop 3s 4s;
+        }
+
+        @keyframes grow {
+            0%{
+                transform: scale(.3);
+
+            }
+
+            100%{
+                transform: scale(1.5);
+            }
+        }
+
+        @keyframes drop {
+            0%{
+                transform: translateY(0);
+            }
+
+            100%{
+                transform: translateY(300px);
+            }
+        }
+
+        @keyframes colorize {
+
+            100%{
+                background-color: brown;
+            }
+            
+        }
+    </style>
+  </head>
+  <body>
+    <div class="circle-cont">
+      <div class="circle c1"></div>
+      <div class="circle c2"></div>
+      <div class="circle c3"></div>
+    </div>
+    <div class="ground"></div>
+  </body>
+</html>

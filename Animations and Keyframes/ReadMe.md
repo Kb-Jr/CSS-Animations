@@ -37,3 +37,8 @@
 ## Keyframe Percentage
 - Previously we declared our keyframes keywords using the 'from' and 'to' declarations to indicate the start and end of the animation. We can also use percentages to replace these.
 - Using percentages lets us specify intermediate stages of the animation. For example we can start with 0% and end with 100%, but in between we can also have other percentages like 30, 50, 75 etc.
+
+## Multiple Animations
+- It is possible to have multiple animations applied on the same element
+- This can be achieved by comma separating the different animations on the selector.
+- You can use other animation properties such as delay, iteration count, timing function etc to get more interesting animations 

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyFrame Percent</title>
+    <style>
+        .element{
+            height: 200px;
+            width: 200px;
+            margin: 100px;
+            background-color: brown;
+            animation-name: animate;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes animate {
+            0% {
+                border-radius: 100%;
+                transform: scale(.3);
+                background-color: burlywood;
+            }
+
+            50%{
+                border-radius:50%;
+                transform: scale(1);
+                background-color: cadetblue;
+            }
+
+            100%{
+                border-radius: 5%;
+                transform: scale(1.5);
+                background-color: aquamarine;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="element">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip</title>
+    <style>
+        ul{
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+        }
+
+        .gallery li{
+            height: 500px;
+            width: 500px;
+            position: relative;
+            list-style: none;
+            overflow: hidden;
+            margin: 30px;
+    
+        }
+
+
+        li > img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .tooltip{
+            bottom: 40px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 0px 15px 15px 0px;
+            left: 0px;
+            position: absolute; 
+            color: rgb(47, 12, 77);
+            display: none;
+            max-width: 75%;
+        }
+
+        .tooltip h1{
+            line-height: 1;
+            padding: 5px 30px;
+        }
+
+        .gallery li:hover .tooltip{
+            display: block;
+            animation: tooltip 1.5s forwards;
+        }
+
+        .tooltip p{
+            padding: 0 30px 5px;
+            text-align: justify;
+        }
+
+        @keyframes tooltip {
+            0%{
+                transform: translateX(-400px);
+            }
+
+            100%{
+                transform: translateX(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul class="gallery">
+        <li>
+            <img src="./Front.jpg" alt="">
+            <div class="tooltip">
+                <h1>Plenty Jellyfish</h1>
+            </div>
+        </li>
+        <li>
+            <img src="./Back.jpg" alt="">
+            <div class="tooltip">
+                <h1>Few Jellyfish</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate earum molestias deleniti omnis, exercitationem ea commodi, eius facere non quam tempora aliquid. Ducimus accusantium, repellendus iste aspernatur adipisci voluptatem corporis!</p>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>

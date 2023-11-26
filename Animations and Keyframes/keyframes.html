@@ -1,50 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KeyFrames</title>
     <style>
-        /* .wrap{
-            height: 200px;
-            width: 200px;
-            margin: 30px;
-            border: 1px solid #333;
-            background-color: aquamarine;
+      .box {
+        height: 200px;
+        width: 200px;
+        margin: 30px;
+        background-color: rgb(2, 51, 58);
+        text-align: center;
+      }
 
-        } */
+      .box:hover {
+        animation: myAnimation 2s ease-in-out 0s infinite;
+      }
 
-        .box{
-            height: 200px;
-            width: 200px;
-            margin: 30px;
-            background-color: rgb(2, 51, 58);
-            text-align: center;
-            
-        }
-        
-        .box:hover{
-            animation: myAnimation 2s ease-in-out 0s infinite;
+      @keyframes myAnimation {
+        from {
+          transform: translateX(0%);
+          background-color: burlywood;
         }
 
-        @keyframes myAnimation {
-            from {
-                transform: translateX(0%);
-                background-color: burlywood;
-            }
-
-            to {
-                transform: translateX(100%);
-                background-color: chocolate;
-            }
+        to {
+          transform: translateX(100%);
+          background-color: chocolate;
         }
+      }
     </style>
-</head>
-<body>
-  
-        <div class="box">
-            Animation
-        </div>
-    
-</body>
+  </head>
+  <body>
+    <div class="box">Animation</div>
+  </body>
 </html>

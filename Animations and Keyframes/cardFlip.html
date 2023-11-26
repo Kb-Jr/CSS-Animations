@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Flip</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .card{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 400px;
+            width: 400px;
+            margin: -200px;
+        }
+
+        .content{
+            height: 100%;
+            width: 100%;
+            box-shadow: 0 0 12px rgba(0, 0, 0, .5);
+            border-radius: 10px;
+            border: 3px solid #7cf;
+            transition: transform 2s;
+            transform-style: preserve-3d;
+        }
+
+        .front, .back {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            border-radius: 5px;
+            backface-visibility: hidden;
+        }
+
+        .front > img{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
+        .back > img{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            border-radius: 10px;
+            
+        }
+
+        .back{
+            transform: rotateY(180deg);
+        }
+
+        .card:hover .content{
+            transform: rotateY(180deg);
+            transition: 2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="content">
+            <div class="front"><img src="./Front.jpg" alt=""></div>
+            <div class="back"><img src="./Back.jpg" alt=""></div>
+        </div>
+    </div>
+</body>
+</html>
